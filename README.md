@@ -35,7 +35,7 @@ A comprehensive, high-performance WezTerm configuration featuring modular archit
 1. **Clone the configuration:**
 
    ```bash
-   git clone <your-repo-url> ~/.config/wezterm
+   git clone https://github.com/riandoza/wezterm-config.git ~/.config/wezterm
    ```
 
 2. **Install required font:**
@@ -163,7 +163,7 @@ See [WezTerm Linux Installation](https://wezfurlong.org/wezterm/install/linux.ht
 
 | Key | Action | Description |
 |-----|--------|-------------|
-| `Ctrl+Shift+c/v` | Copy/Paste | Standard clipboard operations |
+| `Cmd+c/v` | Copy/Paste | Standard clipboard operations |
 | `Cmd+f` | Search | Search text in terminal |
 | `Cmd+Ctrl+u` | Quick URL | Extract and open URLs |
 
