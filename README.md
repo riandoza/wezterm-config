@@ -164,7 +164,7 @@ See [WezTerm Linux Installation](https://wezfurlong.org/wezterm/install/linux.ht
 | Key | Action | Description |
 |-----|--------|-------------|
 | `Cmd+c/v` | Copy/Paste | Standard clipboard operations |
-| `Cmd+f` | Search | Search text in terminal |
+| `Cmd+Shift+f` | Search | Search text in terminal |
 | `Cmd+Ctrl+u` | Quick URL | Extract and open URLs |
 
 ## 🏗️ Architecture

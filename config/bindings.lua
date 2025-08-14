@@ -143,8 +143,30 @@ local keys = {
     -- ========================================
     -- SEARCH & NAVIGATION
     -- ========================================
-    { key = 'f', mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
+    --{ key = 'f', mods = mod.SUPER, action = act.Search('CurrentSelectionOrEmptyString') },
+    --{ key = 'f', mods = 'SHIFT|CTRL', action = act.Search('CurrentSelectionOrEmptyString') },
     { key = 'k', mods = mod.SUPER, action = act.ClearScrollback('ScrollbackOnly') },
+
+    -- search for things that look like git hashes
+    {
+            key = 'F',
+            mods = mod.SUPER,
+            action = act.Search {
+            Regex = '[a-f0-9]{6,}',
+            },
+        },
+        -- search for the lowercase string "hash" matching the case exactly
+        {
+            key = 'F',
+            mods = mod.SUPER,
+            action = act.Search { CaseSensitiveString = '' },
+        },
+        -- search for the string "hash" matching regardless of case
+        {
+            key = 'F',
+            mods = mod.SUPER,
+            action = act.Search { CaseInSensitiveString = '' },
+        },
 
     -- Quick URL opener
     {
